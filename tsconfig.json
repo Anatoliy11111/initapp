@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "target": "ESNext", // Целевой уровень JavaScript
+        "lib": ["DOM", "ESNext"], // Библиотеки для включения в контекст компиляции
+        "allowJs": true, // Разрешить работу с JavaScript файлами
+        "skipLibCheck": true, // Пропустить проверку библиотек
+        "strict": true, // Включить строгий режим проверки типов
+        "forceConsistentCasingInFileNames": true, // Требовать единообразие регистров имен файлов
+        "noEmit": true, // Не производить сборку JS-файлов, так как это делает Webpack
+        "esModuleInterop": true, // Поддержка межмодульной совместимости
+        "moduleResolution": "node", // Стиль разрешения модулей
+        "resolveJsonModule": true, // Разрешение JSON модулей
+        "isolatedModules": true, // Подсказка для инструментов сборки
+        "jsx": "react-jsx", // Способ обработки JSX
+        "module": "commonjs", // Формат модулей для вывода
+        "baseUrl": "./", // Базовый путь для поиска модулей
+        "paths": {} // Конфигурация путей (если нужны alias)
+    },
+    "include": ["src/**/*"] // Указываем какие файлы включать в процесс компиляции
+}
