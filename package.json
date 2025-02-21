@@ -1,51 +1,56 @@
 {
-  "name": "initapp",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "webpack serve --open",
-    "build": "webpack",
-    "test": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Anatoliy11111/initapp.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Anatoliy11111/initapp/issues"
-  },
-  "homepage": "https://github.com/Anatoliy11111/initapp#readme",
-  "dependencies": {
-    "@types/react": "^19.0.10",
-    "@types/react-dom": "^19.0.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "typescript": "^5.7.3"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.26.9",
-    "@babel/preset-env": "^7.26.9",
-    "@babel/preset-react": "^7.26.3",
-    "@babel/preset-typescript": "^7.26.0",
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.2.0",
-    "babel-loader": "^9.2.1",
-    "css-loader": "^7.1.2",
-    "eslint": "^9.20.1",
-    "eslint-config-prettier": "^10.0.1",
-    "eslint-plugin-prettier": "^5.2.3",
-    "eslint-plugin-react": "^7.37.4",
-    "eslint-plugin-react-hooks": "^5.1.0",
-    "html-webpack-plugin": "^5.6.3",
-    "jest": "^29.7.0",
-    "prettier": "^3.5.1",
-    "style-loader": "^4.0.0",
-    "webpack": "^5.98.0",
-    "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.0"
-  }
+    "name": "initapp",
+    "homepage": "https://Anatoliy11111.github.io/initapp",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "start": "webpack serve --open",
+        "build": "webpack",
+        "test": "jest",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
+    },
+    "keywords": [],
+    "dependencies": {
+        "@types/react": "^19.0.10",
+        "@types/react-dom": "^19.0.4",
+        "gh-pages": "^6.3.0",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "typescript": "^5.7.3"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.26.9",
+        "@babel/preset-env": "^7.26.9",
+        "@babel/preset-react": "^7.26.3",
+        "@babel/preset-typescript": "^7.26.0",
+        "@testing-library/jest-dom": "^6.6.3",
+        "@testing-library/react": "^16.2.0",
+        "babel-loader": "^9.2.1",
+        "css-loader": "^7.1.2",
+        "eslint": "^9.20.1",
+        "eslint-config-prettier": "^10.0.1",
+        "eslint-plugin-prettier": "^5.2.3",
+        "eslint-plugin-react": "^7.37.4",
+        "eslint-plugin-react-hooks": "^5.1.0",
+        "html-webpack-plugin": "^5.6.3",
+        "jest": "^29.7.0",
+        "prettier": "^3.5.1",
+        "style-loader": "^4.0.0",
+        "webpack": "^5.98.0",
+        "webpack-cli": "^6.0.1",
+        "webpack-dev-server": "^5.2.0"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
 }
